@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="welcome_message">Welcome to Tic Tac Toe</string>
+    <string name="startButton">Start</string>
+    <string name="high_scoreButton">High Score</string>
+    <string name="exit">Exit</string>
+    <string name="homeButton">Home</string>
+    <string name="end_gameButton">End Game</string>
+    <string name="play_againButton">Play Again</string>
+    <string name="save_score">Save Score</string>
+    <string name="getName">Winner please enter your name:</string>
+    <string name="name">Name</string>
+    <string name="score">Score</string>
+    <string name="date_time">Date-Time</string>
+    <string name="imageDescription">Image of tic tac toe</string>
+</resources>
