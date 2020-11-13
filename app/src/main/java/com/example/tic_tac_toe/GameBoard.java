@@ -92,7 +92,7 @@ public class GameBoard extends AppCompatActivity implements View.OnClickListener
 
             }
             player1Turn = false;
-            nextMove();
+            //nextMove();
 
         }
         else{
@@ -109,7 +109,14 @@ public class GameBoard extends AppCompatActivity implements View.OnClickListener
 
             }
             player1Turn = true;
-            nextMove();
+            //nextMove();
+        }
+
+        if (noClicks == 9){
+            resultPage = new Intent(GameBoard.this, Result.class);
+            resultPage.putExtra("totalClicks", noClicks);
+            finish();
+            startActivity(resultPage);
         }
 
     }
@@ -145,7 +152,7 @@ public class GameBoard extends AppCompatActivity implements View.OnClickListener
         return false;
     }
 //Next move method used to check the board to see if there are 2 symbols in a row and automatically places the other players symbol in the position to block them winning
-    private void nextMove(){
+    /*private void nextMove(){
         String[][] symbols = new String[3][3];
 
         for(int i = 0; i < 3; i++){
@@ -208,6 +215,6 @@ public class GameBoard extends AppCompatActivity implements View.OnClickListener
             finish();
             startActivity(resultPage);
         }
-    }
+    }*/
 
 }
